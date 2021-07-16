@@ -1,0 +1,27 @@
+Respuesta
+a)
+Como Usuario de Choucair Quiero buscar un tema en ChoucairWiki Para Obtener información necesaria para mi estudio
+
+1 - La persona que usará el producto es un usuario registrado en la empresa Chouicair,
+la necesidad que presenta es la de buscar un tema en especifico dentro del sitio web y ver los resultados. Para
+asi buscar información extra del concepto a buscar.
+2- La salida que se espera es los resultado que coincidan con las busqueda realizada, de esta manera se beneficia
+al evitar buscar en manera manual.
+
+b)
+HU escrita en intellij
+    #Autor: Jean Sousa
+      @stories
+      Feature: Search Choucair Wiki
+        As I user, i want to do a search so that  found information
+      @scenario
+      Scenario: Search for a concept
+        Given Browser on the Choucairwiki page
+        |user|password|
+        |jsousad|Choucair10696@@|
+        When Search the concept
+        |concept|
+        |Metodología de Pruebas|
+        Then search results are displayed
+        |result|
+        |Resultados de la búsqueda|
